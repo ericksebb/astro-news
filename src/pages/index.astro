@@ -1,22 +1,75 @@
 ---
+// Astro component
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
-
 <!doctype html>
 <html lang="es">
 <head>
 	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	<style>
+		body {
+			font-family: system-ui, sans-serif;
+			background-color: #fff;
+			color: #000;
+			margin: 0;
+			padding: 0;
+			line-height: 1.6;
+		}
+
+		main {
+			max-width: 800px;
+			margin: 2rem auto;
+			padding: 0 1rem;
+		}
+
+		h3 {
+			text-align: center;
+			font-size: 1.6rem;
+			margin-bottom: 2rem;
+			border-bottom: 2px solid #000;
+			padding-bottom: 0.5rem;
+		}
+
+		section {
+			margin-bottom: 2.5rem;
+			padding: 1.5rem;
+			border: 1px solid #000;
+			border-radius: 6px;
+			background: #f9f9f9;
+		}
+
+		section p {
+			margin: 0 0 1rem 0;
+			font-weight: bold;
+			font-size: 1.1rem;
+		}
+
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+			margin: 0;
+		}
+
+		li {
+			margin-bottom: 0.5rem;
+		}
+
+		strong {
+			display: inline-block;
+			min-width: 130px;
+		}
+	</style>
 </head>
 <body>
 <Header />
 <main>
-	<h3>📊 Informe de Proyectos Informáticos (Junio 2024 - Junio 2025)</h3>
+	<h3>📊 Informe de Proyectos Informáticos<br>(Junio 2024 - Junio 2025)</h3>
 
 	<section>
-		<p><strong>❌ Proyecto Fracasado - Nacional (Ecuador)</strong></p>
+		<p>❌ Proyecto Fracasado - Nacional (Ecuador)</p>
 		<ul>
 			<li><strong>Nombre:</strong> Yachay – Ciudad del Conocimiento</li>
 			<li><strong>Autores:</strong> Gobierno ecuatoriano</li>
@@ -27,7 +80,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</section>
 
 	<section>
-		<p><strong>❌ Proyecto Fracasado - Internacional</strong></p>
+		<p>❌ Proyecto Fracasado - Internacional</p>
 		<ul>
 			<li><strong>Nombre:</strong> Implementación ERP de Target Canadá</li>
 			<li><strong>Autores:</strong> Target y SAP</li>
@@ -38,7 +91,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</section>
 
 	<section>
-		<p><strong>✅ Proyecto Exitoso - Nacional (Ecuador)</strong></p>
+		<p>✅ Proyecto Exitoso - Nacional (Ecuador)</p>
 		<ul>
 			<li><strong>Nombre:</strong> Política de Inteligencia Artificial — Mintel</li>
 			<li><strong>Autores:</strong> Ministerio de Telecomunicaciones y Sociedad de la Información</li>
@@ -49,7 +102,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</section>
 
 	<section>
-		<p><strong>✅ Proyecto Exitoso - Internacional</strong></p>
+		<p>✅ Proyecto Exitoso - Internacional</p>
 		<ul>
 			<li><strong>Nombre:</strong> SmartSantander</li>
 			<li><strong>Autores:</strong> Universidad de Cantabria, EC, Generalitat Valenciana y otros.</li>

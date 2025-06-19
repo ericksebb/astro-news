@@ -51,7 +51,7 @@ Esta integración con sectores como la agricultura, la minería, el transporte m
 
 El éxito de Starlink no solo pone a SpaceX en la cúspide de la innovación tecnológica, sino que abre la puerta a una nueva era en la conectividad global, estableciendo nuevos paradigmas para la utilización comercial del espacio.
 
-El proyecto ha inspirado a competidores y ha catalizando una nueva carrera espacial comercial, con múltiples empresas intentando replicar el modelo de Starlink. Sin embargo, la ventaja competitiva acumulada por SpaceX en términos de escala, experiencia y capacidad de lanzamiento mantiene su posición dominante.
+El proyecto ha inspirado a competidores y ha catalizado una nueva carrera espacial comercial, con múltiples empresas intentando replicar el modelo de Starlink. Sin embargo, la ventaja competitiva acumulada por SpaceX en términos de escala, experiencia y capacidad de lanzamiento mantiene su posición dominante.
 
 ## Expansión Interplanetaria y Visión Futura
 
