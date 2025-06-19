@@ -11,65 +11,89 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	<style>
 		body {
-			font-family: system-ui, sans-serif;
+			font-family: 'Segoe UI', system-ui, sans-serif;
 			background-color: #fff;
 			color: #000;
 			margin: 0;
 			padding: 0;
 			line-height: 1.6;
+			letter-spacing: 0.2px;
 		}
 
 		main {
 			max-width: 800px;
-			margin: 2rem auto;
-			padding: 0 1rem;
+			margin: 3rem auto;
+			padding: 0 1.5rem;
 		}
 
 		h3 {
 			text-align: center;
-			font-size: 1.6rem;
-			margin-bottom: 2rem;
-			border-bottom: 2px solid #000;
+			font-size: 2rem;
+			margin-bottom: 2.5rem;
 			padding-bottom: 0.5rem;
+			border-bottom: 1px solid #000;
+			font-weight: 600;
 		}
 
 		section {
-			margin-bottom: 2.5rem;
-			padding: 1.5rem;
 			border: 1px solid #000;
-			border-radius: 6px;
-			background: #f9f9f9;
+			border-radius: 8px;
+			background-color: #fafafa;
+			padding: 1.5rem;
+			margin-bottom: 2rem;
+			transition: background-color 0.3s ease;
+		}
+
+		section:hover {
+			background-color: #f0f0f0;
 		}
 
 		section p {
-			margin: 0 0 1rem 0;
-			font-weight: bold;
-			font-size: 1.1rem;
+			font-size: 1.15rem;
+			font-weight: 600;
+			margin: 0 0 1rem;
+			text-transform: uppercase;
+			border-bottom: 1px solid #000;
+			padding-bottom: 0.4rem;
 		}
 
 		ul {
-			list-style-type: none;
+			list-style: none;
 			padding-left: 0;
 			margin: 0;
 		}
 
 		li {
-			margin-bottom: 0.5rem;
+			margin-bottom: 0.6rem;
+			font-size: 1rem;
 		}
 
 		strong {
 			display: inline-block;
-			min-width: 130px;
+			width: 140px;
+			font-weight: 600;
+		}
+
+		/* Opcional: Diferenciar visualmente éxito y fracaso */
+		section.success p {
+			border-left: 5px solid #000;
+			padding-left: 0.5rem;
+		}
+
+		section.fail p {
+			border-left: 5px solid #000;
+			padding-left: 0.5rem;
+			opacity: 0.85;
 		}
 	</style>
 </head>
 <body>
 <Header />
 <main>
-	<h3>📊 Informe de Proyectos Informáticos<br>(Junio 2024 - Junio 2025)</h3>
+	<h3>Informe de Proyectos Informáticos<br>(Junio 2024 – Junio 2025)</h3>
 
-	<section>
-		<p>❌ Proyecto Fracasado - Nacional (Ecuador)</p>
+	<section class="fail">
+		<p>Proyecto Fracasado — Nacional (Ecuador)</p>
 		<ul>
 			<li><strong>Nombre:</strong> Yachay – Ciudad del Conocimiento</li>
 			<li><strong>Autores:</strong> Gobierno ecuatoriano</li>
@@ -79,8 +103,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		</ul>
 	</section>
 
-	<section>
-		<p>❌ Proyecto Fracasado - Internacional</p>
+	<section class="fail">
+		<p>Proyecto Fracasado — Internacional</p>
 		<ul>
 			<li><strong>Nombre:</strong> Implementación ERP de Target Canadá</li>
 			<li><strong>Autores:</strong> Target y SAP</li>
@@ -90,8 +114,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		</ul>
 	</section>
 
-	<section>
-		<p>✅ Proyecto Exitoso - Nacional (Ecuador)</p>
+	<section class="success">
+		<p>Proyecto Exitoso — Nacional (Ecuador)</p>
 		<ul>
 			<li><strong>Nombre:</strong> Política de Inteligencia Artificial — Mintel</li>
 			<li><strong>Autores:</strong> Ministerio de Telecomunicaciones y Sociedad de la Información</li>
@@ -101,8 +125,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		</ul>
 	</section>
 
-	<section>
-		<p>✅ Proyecto Exitoso - Internacional</p>
+	<section class="success">
+		<p>Proyecto Exitoso — Internacional</p>
 		<ul>
 			<li><strong>Nombre:</strong> SmartSantander</li>
 			<li><strong>Autores:</strong> Universidad de Cantabria, EC, Generalitat Valenciana y otros.</li>
